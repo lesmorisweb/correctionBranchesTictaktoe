@@ -3,6 +3,6 @@ import { playGame } from "../controller/gameController"
 
 const router= Router()
 
-router.post("/play", (req: any, res: any) => playGame(req, res))
+router.post("/play", playGame)
 
 export default router

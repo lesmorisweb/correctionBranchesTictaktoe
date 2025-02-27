@@ -1,12 +1,12 @@
 import express from "express"
-import router from "./routes/routes";
+import gameRoutes from "./routes/routes"
 
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
-app.get("/game", router)
+app.use("/game", gameRoutes)
 
 
 app.listen(PORT, () => {
