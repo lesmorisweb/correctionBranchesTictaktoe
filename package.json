@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "ts-node-dev ./src/index.ts"
+  },
   "dependencies": {
     "@types/express": "^5.0.0",
     "eslint": "^9.21.0",
